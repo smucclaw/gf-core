@@ -2,6 +2,7 @@
 -- | GF interactive mode
 module GF.Interactive (mainGFI,mainRunGFI,mainServerGFI) where
 
+import Control.Monad ((<=<), join, when)
 import Prelude hiding (putStrLn,print)
 import qualified Prelude as P(putStrLn)
 import GF.Command.Interpreter(CommandEnv(..),mkCommandEnv,interpretCommandLine)
